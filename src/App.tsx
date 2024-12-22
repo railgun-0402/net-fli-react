@@ -2,10 +2,10 @@ import { Row } from "./components/Row";
 import { requests } from "./request";
 
 function App() {
-
   return (
     <div className="App">
-      <Row fetchUrl={requests.fetchNetflixOriginals} />
+      <Row isLargeRow={true} fetchUrl={requests.fetchNetflixOriginals} />
+      <Row isLargeRow={false} fetchUrl={requests.fetchNetflixOriginals} />
     </div>
   );
 }

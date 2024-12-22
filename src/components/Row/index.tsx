@@ -8,12 +8,6 @@ type Props = {
 };
 
 export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
-  //   async function fetchData() {
-  //     const request = await axios.get(fetchUrl);
-  //   }
-
-  //   fetchData();
-
   return (
     <Layout title={title} isLargeRow={isLargeRow} {...useProps(fetchUrl)} />
   );
